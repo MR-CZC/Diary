@@ -23,12 +23,10 @@
         components : {Diary},
         mounted(){
             axios.get(
-                'http://pve.lycoris.site:9780/dairy/selectDairy'
+                '/dairy/selectDairy'
             ).then(response=>{
-                // console.log(response.data);
                 this.items = response.data.data.items;
                 this.diarys = this.items.sort((a,b) => b.id - a.id);
-                // console.log(this.items);
             },error=>{
                 console.log(error);
             }),

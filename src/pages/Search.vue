@@ -58,7 +58,7 @@
             search(){
                 if(this.info.condition.trim().length && this.info.value.trim().length){
                     axios.post(
-                        'http://pve.lycoris.site:9780/dairy/selectDairyByCondition',
+                        '/dairy/selectDairyByCondition',
                         {},
                         {
                             params : {

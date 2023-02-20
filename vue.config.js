@@ -4,10 +4,8 @@ module.exports = defineConfig({
   lintOnSave:false,
   devServer : {
     proxy : {
-      "/v2/api-docs":{
+      "/dairy":{
         target : "http://pve.lycoris.site:9780",
-        pathRewriter:{'^/v2/api-docs':''},
-        ws : true,
         changeOrigin : true,
       }
     }

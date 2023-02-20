@@ -51,7 +51,7 @@
                 let that = this;
                 if(this.diary.name.trim().length && this.diary.title.trim().length && this.diary.detail.trim().length){
                     axios.post(
-                        'http://pve.lycoris.site:9780/dairy/updateDairy',
+                        '/dairy/updateDairy',
                         {},
                         {
                             params : {
@@ -74,7 +74,7 @@
             },
             remove(){
                 axios.delete(
-                    'http://pve.lycoris.site:9780/dairy/deleteDairy',
+                    '/dairy/deleteDairy',
                     {
                         params : {
                             id:this.detail.id

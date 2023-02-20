@@ -39,7 +39,7 @@
             submit(){
                 if(this.info.name.trim().length && this.info.title.trim().length && this.info.detail.trim().length){
                     axios.post(
-                        'http://pve.lycoris.site:9780/dairy/addDairy',
+                        '/dairy/addDairy',
                         {},
                         {
                             params : {
@@ -55,7 +55,7 @@
                         this.info.detail = "";
                         // console.log(response);
                         axios.get(
-                            'http://pve.lycoris.site:9780/dairy/selectDairy'
+                            '/dairy/selectDairy'
                         ).then(response=>{
                             this.$bus.$emit("AddDiary",response.data.data.items);
                         },reason=>{})
