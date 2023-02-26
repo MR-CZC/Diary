@@ -48,7 +48,8 @@
         background-color: rgba(195, 183, 183 ,0.5);
         background: url(../assets/bgi2.png)  center -15px no-repeat;
         border-radius: 20px;
-        position: relative; 
+        position: relative;
+        text-align:center;
     }
     .empty span {
         position: absolute;
@@ -56,6 +57,8 @@
         font-size: 14px;
         font-weight: 700;
         color: gray;
+        left: 50%;
+        transform: translateX(-30px);
     }
     .big{
         margin: 20px auto;
