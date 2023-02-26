@@ -1,6 +1,6 @@
 <template>
     <div class="diary">
-        <div class="top"><span>标题 : {{diary.title}}/</span> 作者 : {{diary.name}}</div>
+        <div class="top"><span>{{diary.title}} / </span> {{diary.name}}</div>
         <div class="banner">编辑于{{diary.time}}</div>
         <div class="main">{{diary.detail}}</div>
         <div class="footer">
@@ -37,16 +37,17 @@
         flex: 1;
         color: rgb(73, 156, 189);
         font-weight: 700;
-        font-size: 20px;
+        font-size: 14px;
     }
     .diary .top span{
         font-weight: 700;
         color: orange;
+        font-size: 27px;
     }
     .diary .banner {
         flex:1;
         color: gray;
-        font-size: 14px;
+        font-size: 12px;
     }
     .diary .main{
         flex: 3;

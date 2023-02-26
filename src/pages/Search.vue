@@ -103,6 +103,7 @@
         align-items:flex-start;
         padding-left: 20px;
         margin-top: 10px;
+        font-size: 20px;
     }
     .big .main .content .search {
         width: 600px;
@@ -115,6 +116,7 @@
         right : 50px;
         bottom: -60px;
         font-weight: 700;
+        margin-top: 15px;
     }
     @media screen and (max-width : 992px){
         .big{

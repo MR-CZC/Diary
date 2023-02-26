@@ -60,21 +60,26 @@
     .big{
         margin: 20px auto;
         width: 992px;
-        /* height: 100px; */
         background-color: rgba(195, 183, 183 ,0.5);
-        text-align: center;
         border-radius: 20px;
         padding: 10px;
+        display: flex;
+        flex-wrap:wrap;
     }
     .diary{
-        display: flex;
+        width: 40%;
         background-color: #fff;
         margin: 20px;
-        flex-direction: column;
         padding: 20px;
         border-radius: 20px;
     }
     
+    @media screen and (max-width : 820px){
+        .diary {
+            width: 100%;
+        }
+    }
+
     @media screen and (max-width : 992px){
         .big{
             width: 100%;

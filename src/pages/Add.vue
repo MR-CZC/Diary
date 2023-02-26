@@ -97,7 +97,6 @@
     .main .content .name,.main .content .title {
         display: flex;
         align-items: center;
-        font-weight: 700;
         font-size: 20px;
     }
     .main .content .name{
@@ -121,7 +120,6 @@
         position: relative;
         flex : 4;
         margin-top: 20px;
-        font-weight: 700;
         font-size: 20px;
         padding-left: 50px;
     }
@@ -133,7 +131,6 @@
         position: absolute;
         right : 50px;
         bottom: 0px;
-        font-weight: 700;
     }
 
     @media screen and (max-width : 992px){
